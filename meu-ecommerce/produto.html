@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Air Max 98 X - HYPE DROP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header-main">
+        <a href="index.html" class="logo">
+            HYPE <span>DROP</span>
+        </a>
+
+        <div class="search-box">
+            <input type="text" id="campo-busca" placeholder="O que você procura?">
+        </div>
+        
+        <details class="menu-sanduiche">
+            <summary>☰</summary>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produto.html">Produtos</a></li>
+                <li><a href="carrinho.html">Meu Carrinho</a></li>
+                <li><a href="cadastro.html">Minha Conta</a></li>
+            </ul>
+        </details>
+    </header>
+
+    <div class="produto-container">
+        <!-- Trilha de Navegação (Breadcrumb) -->
+        <nav class="breadcrumb">
+            <a href="index.html">Início</a> &gt; <a href="index.html">Tênis</a> &gt; Nike Air Max 98 X
+        </nav>
+
+        <!-- Coluna da Esquerda: Galeria de Imagens -->
+        <section class="galeria-fotos">
+            <img src="img/tnt.jpg" alt="Foto principal do Nike Air Max 98 X" class="foto-principal">
+            <div class="miniaturas-grid">
+                <img src="img/tnt.jpg" alt="Miniatura 1 do Nike Air Max" class="miniatura">
+                <img src="img/nike.jpg" alt="Miniatura 2 do Nike Air Max" class="miniatura">
+                <img src="img/TENISOUS.webp" alt="Miniatura 3 do Nike Air Max" class="miniatura">
+                <img src="img/airyeezy.jpg" alt="Miniatura 4 do Nike Air Max" class="miniatura">
+            </div>
+        </section>
+
+        <!-- Coluna da Direita: Informações de Compra -->
+        <section class="info-compra">
+            <h1>Nike Air Max 98 X</h1>
+            
+            <div class="avaliacao-estrelas">
+                ★ ★ ★ ★ ☆ <span>(4.8)</span>
+            </div>
+
+            <p class="preco-antigo">R$ 499,90</p>
+            <p class="preco-atual">R$ 380,90</p>
+
+            <div class="seletor-opcoes">
+                <label for="opcoes-tamanho">Selecione o Tamanho:</label>
+                <select id="opcoes-tamanho" name="tamanho">
+                    <option value="38">38</option>
+                    <option value="39">39</option>
+                    <option value="40" selected>40</option>
+                    <option value="41">41</option>
+                    <option value="42">42</option>
+                </select>
+            </div>
+
+            <a href="carrinho.html" class="btn-adicionar-carrinho">Adicionar ao Carrinho</a>
+        </section>
+    </div>
+    
+    <!-- Tabela Semântica de Especificações Técnicas -->
+    <section class="secao-especificacoes">
+        <h2>Especificações Técnicas</h2>
+        <table class="tabela-tecnica">
+            <tbody>
+                <tr>
+                    <th scope="row">Marca</th>
+                    <td>Nike</td>
+                </tr>
+                <tr>
+                    <th scope="row">Material</th>
+                    <td>Couro Sintético e Camurça</td>
+                </tr>
+                <tr>
+                    <th scope="row">Peso</th>
+                    <td>420g (Varia de acordo com o tamanho)</td>
+                </tr>
+                <tr>
+                    <th scope="row">Dimensões</th>
+                    <td>32cm x 20cm x 12cm</td>
+                </tr>
+                <tr>
+                    <th scope="row">Garantia</th>
+                    <td>90 dias contra defeito de fabricação</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+</body>
+</html>

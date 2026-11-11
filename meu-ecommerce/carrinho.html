@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Carrinho - HYPE DROP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header-main">
+        <a href="index.html" class="logo">
+            HYPE <span>DROP</span>
+        </a>
+
+        <div class="search-box">
+            <input type="text" id="campo-busca" placeholder="O que você procura?">
+        </div>
+        
+        <details class="menu-sanduiche">
+            <summary>☰</summary>
+            <ul>
+                <li><a href="index.html">Lançamentos</a></li>
+                <li><a href="produto.html">Produtos</a></li>
+                <li><a href="carrinho.html">Meu Carrinho</a></li>
+                <li><a href="cadastro.html">Minha Conta</a></li>
+            </ul>
+        </details>
+    </header>
+
+    <main class="carrinho-main">
+        <h1>Seu Carrinho de Compras</h1>
+
+        <!-- 1. TABELA DE ITENS COMPLETA -->
+        <div class="tabela-container">
+            <table class="tabela-carrinho">
+                <caption>Lista de itens adicionados para compra</caption>
+                
+                <thead>
+                    <tr>
+                        <th scope="col">Produto</th>
+                        <th scope="col">Preço Unitário</th>
+                        <th scope="col">Quantidade</th>
+                        <th scope="col">Subtotal</th>
+                        <th scope="col">Ação</th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    <!-- Produto 1 -->
+                    <tr>
+                        <td>
+                            <div class="produto-info">
+                                <img src="img/tnt.jpg" alt="Nike Air Max 98 X" class="img-carrinho">
+                                <div class="produto-texto">
+                                    <h2>Nike Air Max 98 X</h2>
+                                    <span>Categoria: Tênis</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td>R$ 340,90</td>
+                        <td><input type="number" min="1" value="1" class="qtd-input"></td>
+                        <td class="subtotal-val">R$ 340,90</td>
+                        <td><button class="btn-remover" title="Remover item">🗑️</button></td>
+                    </tr>
+
+                    <!-- Produto 2 -->
+                    <tr>
+                        <td>
+                            <div class="produto-info">
+                                <img src="img/nike.jpg" alt="Nike Street Purple" class="img-carrinho">
+                                <div class="produto-texto">
+                                    <h2>Nike Street Purple</h2>
+                                    <span>Categoria: Tênis</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td>R$ 789,90</td>
+                        <td><input type="number" min="1" value="1" class="qtd-input"></td>
+                        <td class="subtotal-val">R$ 789,90</td>
+                        <td><button class="btn-remover" title="Remover item">🗑️</button></td>
+                    </tr>
+
+                    <!-- Produto 3 -->
+                    <tr>
+                        <td>
+                            <div class="produto-info">
+                                <img src="img/TENISOUS.webp" alt="OUS Camurça Classic" class="img-carrinho">
+                                <div class="produto-texto">
+                                    <h2>OUS Camurça Classic</h2>
+                                    <span>Categoria: Tênis</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td>R$ 549,90</td>
+                        <td><input type="number" min="1" value="1" class="qtd-input"></td>
+                        <td class="subtotal-val">R$ 549,90</td>
+                        <td><button class="btn-remover" title="Remover item">🗑️</button></td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <!-- Colspan cobrindo as 5 colunas para mensagem de frete -->
+                        <td colspan="5" style="text-align: center;">
+                            🎉 Parabéns! Você ganhou Frete Grátis nesta compra.
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+        <!-- 2. CARD LATERAL DE RESUMO DO PEDIDO -->
+        <aside class="order-summary">
+            <h3>Resumo do Pedido</h3>
+            
+            <div class="resumo-linha">
+                <span>Subtotal:</span>
+                <span>R$ 1.680,70</span>
+            </div>
+            
+            <div class="resumo-linha">
+                <span>Valor do Frete:</span>
+                <span style="color: green; font-weight: bold;">Grátis</span>
+            </div>
+
+            <div class="cupom-container">
+                <input type="text" placeholder="Cupom de Desconto">
+                <button type="button" class="btn-cupom">Aplicar</button>
+            </div>
+
+            <div class="total-linha">
+                <span>Valor Total:</span>
+                <span class="preco-total">R$ 1.680,70</span>
+            </div>
+
+            <!-- Botão de destaque direcionando para o cadastro -->
+            <a href="cadastro.html" class="btn-checkout">Finalizar Compra</a>
+        </aside>
+    </main>
+
+</body>
+</html>
